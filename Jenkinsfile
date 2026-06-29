@@ -6,7 +6,7 @@ pipeline {
     }
     environment {
         appVersion = ""
-        ACC_ID = "160885265516"
+        ACC_ID = "553490164630"
         region = "us-east-1"
     }
     options {
@@ -54,7 +54,7 @@ pipeline {
         stage ('SonarQube Analysis'){
             steps {
                 script {
-                    def scannerHome = tool name: 'sonar-8' // agent configuration
+                    def scannerHome = tool name: 'sonar-8.0' // agent configuration
                     withSonarQubeEnv('sonar-server') { // analysing and uploading to server
                         sh "${scannerHome}/bin/sonar-scanner"
                     }
