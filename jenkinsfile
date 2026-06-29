@@ -10,9 +10,9 @@ pipeline{
                 echo "this is build"
             }
         }
-        stage('This is buid stage'){
+        stage('This is Teststage'){
             steps{
-                echo "this is build"
+                echo "this is Test"
             }
         }
 
