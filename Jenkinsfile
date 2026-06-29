@@ -20,11 +20,7 @@ pipeline{
                 echo "this is Deploy"
             }
         }
-        stage('This is Final'){
-            steps{
-                echo "this is final"
-            }
-        }
+       
 
     }
     }
