@@ -46,7 +46,7 @@ pipeline {
             steps {
                 script{
                     sh """
-                         npm test -- --ci --runInBand --detectOpenHandles
+                         npm test
                     """
                 }
             }
