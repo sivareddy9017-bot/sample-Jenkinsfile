@@ -42,7 +42,7 @@ pipeline {
                 }
             }
         }
-       /*  stage('Unit tests') {
+         stage('Unit tests') {
             steps {
                 script{
                     sh """
@@ -50,7 +50,7 @@ pipeline {
                     """
                 }
             }
-        } */
+        } 
         stage ('SonarQube Analysis'){
             steps {
                 script {
@@ -61,13 +61,13 @@ pipeline {
                 }
             }
         }
-       /*  stage("Quality Gate") {
+        stage("Quality Gate") {
             steps {
               timeout(time: 1, unit: 'HOURS') {
                 waitForQualityGate abortPipeline: true
               }
             }
-        } */
+        } 
         stage('Build Image') {
             steps {
                script{
