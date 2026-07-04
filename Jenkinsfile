@@ -42,7 +42,7 @@ pipeline {
                 }
             }
         }
-        /*  stage('Unit tests') {
+         stage('Unit tests') {
             steps {
                 script{
                     sh """
@@ -50,7 +50,7 @@ pipeline {
                     """
                 }
             }
-        }  */
+        }  
         stage ('SonarQube Analysis'){
             steps {
                 script {
