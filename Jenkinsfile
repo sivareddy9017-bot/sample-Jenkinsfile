@@ -1,9 +1,9 @@
 pipeline {
-    agent any /* {
+    agent {
         node {
             label 'Java' 
         } 
-    } */
+    } 
     environment {
         appVersion = ""
         ACC_ID = "553490164630"
