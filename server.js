@@ -68,7 +68,7 @@ async function mongoConnect() {
             process.env.MONGO_URL ||
             'mongodb://mongodb:27017/catalogue';
 
-        const client = await MongoClient.connect(mongoURL);
+        var client = await MongoClient.connect(mongoURL);
         const db = client.db('catalogue');
         collection = db.collection('products');
 

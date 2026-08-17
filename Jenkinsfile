@@ -34,14 +34,17 @@ pipeline {
             }
         }
         stage('Install Dependencies') {
-            steps {
-                script{
-                    sh """
-                        npm install
-                    """
-                }
-            }
+        steps {
+         script{   
+        sh '''
+            export PATH=/usr/bin:/bin:$PATH
+            npm -v
+            npm install
+        '''
+    }
+}
         }
+
          /* stage('Unit tests') {
             steps {
                 script{
